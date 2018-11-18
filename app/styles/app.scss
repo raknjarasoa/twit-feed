@@ -1,22 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
+
 // SETTINGS
 @import 'settings/settings.colors.scss';
+
 // UTILITIES
 @import 'utilities/mixins';
-@import 'utilities/print';
+// @import 'utilities/print';
+
 // BASE
 @import 'base/fonts';
 @import 'base/generic';
 @import 'base/headings';
-@import 'base/typography';
-@import 'base/lists';
 @import 'base/media';
+
 // VENDORS
 @import 'vendors/font-awesome';
+
 // COMPONENTS
 @import 'components/animations';
-@import 'components/social-icons';
 @import 'components/hamburger';
+@import 'components/logo';
+@import 'components/social-icons';
 
 $breakpoints: ( mobile: 20em, tablet: 34em, desktop: 60em);
 @mixin breakpoint($screen-size) {
@@ -32,7 +36,7 @@ html,
 body {
 	background-color: $dark-color;
 	color: $white;
-	font-family: "Roboto Condensed", sans-serif, cursive;
+	font-family: $default-font-family;
 	height: 100%;
 	margin: 0;
 	padding: 0;
