@@ -1,0 +1,146 @@
+extends _base/layout.pug
+
+block main
+
+  header
+    .logo
+      p raknjarasoa
+
+    nav.menu
+      a.menu__item(href='#home') Home
+      a.menu__item(href='#about') About
+      a.menu__item(href='#portfolio') Portfolio
+      a.menu__item(href='#contact') Contact
+
+      span.menu__slider
+
+    .hamburger.js-hamburger
+      .hamburger__wrapper
+        .hamburger__inner
+
+  section#home
+    .lifestyle
+      | I
+      span
+        i.fa.fa-heart.pulse
+      .flip
+        .lifestyle__item
+          p.lifestyle__text Freecodecamp
+        .lifestyle__item
+          p.lifestyle__text Front-End
+        .lifestyle__item
+          p.lifestyle__text Javascript	
+
+  section#about
+    .about
+      strong I'm
+      p.about__me Telecom engineering && Full stack developer
+      p.about__info from Madagascar living in Mauritius, where I work as a Experimented Front End Developer. With a background in back-end development, my strength lies in webapp and website.
+
+  section#portfolio
+    .parallax-2
+      h2 Portfolio
+      p Tell me more about your project
+
+    .portfolio__grid
+    
+      a.portfolio__item(href='https://codepen.io/raknjarasoa/pen/BmMddZ' target='_blank' rel='noopener noreferrer')
+        .portfolio__info
+          h3 Weather
+          p Es6 | pug | foundation 6 | scss
+        .portfolio__thumbnail
+          // images/postit.jpg
+          img(src='https://firebasestorage.googleapis.com/v0/b/ocr-webapp.appspot.com/o/images%2Fweather.PNG?alt=media&token=5d018a8f-984c-4ebc-ac9b-4bc5118855e4' alt='Weather')
+          
+      a.portfolio__item(href='https://codepen.io/raknjarasoa/pen/gXqwqG' target='_blank' rel='noopener noreferrer')
+        .portfolio__info
+          h3 Quote machine
+          p Es6 | pug | scss
+        .portfolio__thumbnail
+          img(src='https://firebasestorage.googleapis.com/v0/b/ocr-webapp.appspot.com/o/images%2Fquot.PNG?alt=media&token=221181f5-39d5-43f3-99b5-e2b2e7d27ed5' alt='Quot')
+          
+      a.portfolio__item(href='https://codepen.io/raknjarasoa/pen/NwQEQE' target='_blank' rel='noopener noreferrer')
+        .portfolio__info
+          h3 Calculator
+          p ExtJs 6 | scss
+        .portfolio__thumbnail
+          img(src='https://firebasestorage.googleapis.com/v0/b/ocr-webapp.appspot.com/o/images%2Fcalc.PNG?alt=media&token=80a0e4f1-52fd-4afb-828b-7ebb124ac56b' alt='Calculator')
+          
+      a.portfolio__item(href='https://codepen.io/raknjarasoa/pen/gXyRzq' target='_blank' rel='noopener noreferrer')
+        .portfolio__info
+          h3 Twitchtv JSON API
+          p AngularJs | scss | html 5
+        .portfolio__thumbnail
+          img(src='https://firebasestorage.googleapis.com/v0/b/ocr-webapp.appspot.com/o/images%2Ftwitch.PNG?alt=media&token=95e2cc23-42cb-4589-a5c7-cef68c6b2e2f' alt='Twhitch')
+          
+      a.portfolio__item(href='https://codepen.io/raknjarasoa/pen/NXrjPb' target='_blank' rel='noopener noreferrer')
+        .portfolio__info
+          h3 Tic Tac Toe Game
+          p Es6 | pug | scss
+        .portfolio__thumbnail
+          img(src='https://firebasestorage.googleapis.com/v0/b/ocr-webapp.appspot.com/o/images%2Ftoe.PNG?alt=media&token=d1b31d6e-5ca8-41e5-8c16-b198634f485d' alt='Tic tac toe')
+          
+      a.portfolio__item(href='https://codepen.io/raknjarasoa/pen/BYadXK' target='_blank' rel='noopener noreferrer')
+        .portfolio__info
+          h3 Simon Game
+          p Es6 | pug | scss
+        .portfolio__thumbnail
+          img(src='https://firebasestorage.googleapis.com/v0/b/ocr-webapp.appspot.com/o/images%2Fsimon.PNG?alt=media&token=c4cc39fc-96c1-41d4-828e-358069632670' alt='Simon game')
+          
+      a.portfolio__item(href='https://codepen.io/raknjarasoa/pen/mqNomR' target='_blank' rel='noopener noreferrer')
+        .portfolio__info
+          h3 Pomodoro
+          p Es6 | pug | scss
+        .portfolio__thumbnail
+          img(src='https://firebasestorage.googleapis.com/v0/b/ocr-webapp.appspot.com/o/images%2Fpomodoro.PNG?alt=media&token=0566e079-6089-420c-a1ca-f19aef9d45a8' alt='Pomodoro')
+          
+      a.portfolio__item(href='https://codepen.io/raknjarasoa/pen/OOdBmE' target='_blank' rel='noopener noreferrer')
+        .portfolio__info
+          h3 Wikipédia viewer
+          p React | Es6 | scss
+        .portfolio__thumbnail
+          img(src='https://firebasestorage.googleapis.com/v0/b/ocr-webapp.appspot.com/o/images%2Fwiki.PNG?alt=media&token=c81798f0-094a-4c29-8030-4c721de07eff' alt='Wiki')
+          
+      a.portfolio__item(href='https://codepen.io/raknjarasoa/pen/pRrQWd' target='_blank' rel='noopener noreferrer')
+        .portfolio__info
+          h3 Tribute page
+          p Pug | scss
+        .portfolio__thumbnail
+          img(src='https://firebasestorage.googleapis.com/v0/b/ocr-webapp.appspot.com/o/images%2Fjjr.PNG?alt=media&token=89c534a4-d9ea-484d-9447-a3556db019bf' alt='JJ Rabearivelo')
+
+  section#contact
+    .parallax-3 
+      h2 Let’s Work Together
+      p Tell me more about your project
+
+    .contact__wrapper
+      form(action='/' method='post')
+        p
+          input(type='text' name='name' placeholder='NAME')
+        p
+          input(type='email' name='email' placeholder='EMAIL')
+        p
+          input(type='tel' name='tel' placeholder='PHONE')
+        p
+          input(type='submit', value='Let\'s talk')
+
+  footer
+    .footer__logo
+      .logo
+        p raknjarasoa	
+    p.copyright!='© 2018 Made with love '
+      i.fa.fa-heart.pulse
+      span!=' by '
+      a(href='https://www.freecodecamp.org/raknjarasoa')
+        strong raknjarasoa
+      span!=' | All Rights Reserved '
+
+    .social-icon
+      a(href='https://www.facebook.com/raknjarasoa' target='_blank' rel='noopener noreferrer')
+        i.fa.fa-4x.fa-facebook-square(aria-hidden='true')
+      a(href='https://www.linkedin.com/in/raknjarasoa/' target='_blank' rel='noopener noreferrer')
+        i.fa.fa-4x.fa-linkedin-square(aria-hidden='true')
+      a(href='https://github.com/raknjarasoa' target='_blank' rel='noopener noreferrer')
+        i.fa.fa-4x.fa-github-square(aria-hidden='true')
+      a(href='https://www.freecodecamp.org/raknjarasoa' target='_blank' rel='noopener noreferrer')
+        i.fa.fa-4x.fa-free-code-camp(aria-hidden='true')
