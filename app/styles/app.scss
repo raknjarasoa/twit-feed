@@ -19,44 +19,9 @@
 // COMPONENTS
 @import 'components/animations';
 @import 'components/hamburger';
+@import 'components/heart';
 @import 'components/logo';
 @import 'components/social-icons';
 
-$breakpoints: ( mobile: 20em, tablet: 34em, desktop: 60em);
-@mixin breakpoint($screen-size) {
-	@if map-has-key($breakpoints, $screen-size) {
-		@media (min-width: map-get($breakpoints, $screen-size)) {
-			@content;
-		}
-	}
-}
-
-// #Main
-html,
-body {
-	background-color: $dark-color;
-	color: $white;
-	font-family: $default-font-family;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-
-	&.overflow--hidden {
-		overflow: hidden;
-	}
-}
-
-.pulse {
-	animation: heathing 1s ease infinite;
-	color: #eb5e28;
-	@include breakpoint(tablet) {
-		flex-direction: row;
-		right: 10%;
-		text-align: left;
-	}
-	@include breakpoint(desktop) {
-		flex-direction: row;
-		right: 50%;
-		text-align: left;
-	}
-}
+// Pages
+@import 'pages/index';

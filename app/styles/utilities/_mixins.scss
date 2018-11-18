@@ -146,3 +146,12 @@ $mid-pixel-ratio-min-res: 144dpi;
 @mixin transition-all() {
 	transition: all 0.25s ease-in-out;
 }
+
+$bp: ( mobile: 20em, tablet: 34em, desktop: 60em);
+@mixin bp($screen-size) {
+	@if map-has-key($bp, $screen-size) {
+		@media (min-width: map-get($bp, $screen-size)) {
+			@content;
+		}
+	}
+}

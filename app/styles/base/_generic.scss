@@ -1,6 +1,24 @@
+* {
+	box-sizing: border-box;
+}
+
 html {
 	font-size: 100%;
 	line-height: 1;
 	min-height: 100%;
 	overflow-y: scroll;
+}
+
+html,
+body {
+	background-color: $color-dark;
+	color: $color-white;
+	font-family: $default-font-family;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+
+	&.overflow--hidden {
+		overflow: hidden;
+	}
 }

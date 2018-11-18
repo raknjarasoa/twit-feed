@@ -1,0 +1,14 @@
+.pulse {
+	animation: heathing 1s ease infinite;
+	color: #eb5e28;
+	@include breakpoint(tablet) {
+		flex-direction: row;
+		right: 10%;
+		text-align: left;
+	}
+	@include breakpoint(desktop) {
+		flex-direction: row;
+		right: 50%;
+		text-align: left;
+	}
+}
