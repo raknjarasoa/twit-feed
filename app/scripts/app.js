@@ -8,6 +8,7 @@ if (module.hot) {
 class Main {
   constructor() {
     this.bindEvents();
+    console.log(isMobileDevice);
   }
 
   bindEvents() {

@@ -2,7 +2,7 @@
 // SETTINGS
 @import 'settings/settings.colors.scss';
 // UTILITIES
-// @import 'utilities/mixins';
+@import 'utilities/mixins';
 @import 'utilities/print';
 // BASE
 @import 'base/fonts';
@@ -17,10 +17,6 @@
 @import 'components/animations';
 @import 'components/social-icons';
 @import 'components/hamburger';
-// #Mixins
-@mixin transition-all() {
-	transition: all 0.25s ease-in-out;
-}
 
 $breakpoints: ( mobile: 20em, tablet: 34em, desktop: 60em);
 @mixin breakpoint($screen-size) {
@@ -40,6 +36,7 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+
 	&.overflow--hidden {
 		overflow: hidden;
 	}

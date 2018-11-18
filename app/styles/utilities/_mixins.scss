@@ -140,3 +140,9 @@ $mid-pixel-ratio-min-res: 144dpi;
 		src: $src;
 	}
 }
+
+
+// #Mixins
+@mixin transition-all() {
+	transition: all 0.25s ease-in-out;
+}
