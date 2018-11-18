@@ -1,0 +1,59 @@
+@keyframes lifestyle {
+	0% {
+		margin-top: -205px;
+	}
+
+	5% {
+		margin-top: -137px;
+	}
+
+	33% {
+		margin-top: -137px;
+	}
+
+	38% {
+		margin-top: -68px;
+	}
+
+	66% {
+		margin-top: -68px;
+	}
+
+	71% {
+		margin-top: 0;
+	}
+
+	99.99% {
+		margin-top: 0;
+	}
+
+	100% {
+		margin-top: -205px;
+	}
+}
+
+@keyframes heathing {
+	0% {
+		transform: scale(0.75);
+	}
+
+	20% {
+		transform: scale(1);
+	}
+
+	40% {
+		transform: scale(0.75);
+	}
+
+	60% {
+		transform: scale(1);
+	}
+
+	80% {
+		transform: scale(0.75);
+	}
+
+	100% {
+		transform: scale(0.75);
+	}
+}

@@ -1,12 +1,18 @@
-
 $color-black: #000 !default;
 $color-white: #fff !default;
 $color-grey: #ccc;
 $color-grey-light: #ccc;
 $color-grey-dark: #ccc;
 $color-grey-dark: #ccc;
-
 $color-primary: #fff;
 $color-secondary: #fff;
 $color-tertiary: #fff;
+
+$bg: radial-gradient( farthest-corner at 40px 40px, rgba(33, 150, 243, 0.68) 0%, rgba(233, 30, 99, 0.68) 100%);
+$white: #ecf0f1;
+$black: #000;
+$color-text: #7a89ab;
+$darkenColor: darken($white, 20%);
+$dark-color: #1d2028;
+$footer-height: 300px;
 
